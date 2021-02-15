@@ -1,3 +1,8 @@
+const hooksRules = {
+  "react-hooks/rules-of-hooks": "error",
+  "react-hooks/exhaustive-deps": "warn",
+}
+
 module.exports = {
   env: {
     browser: true,
@@ -11,7 +16,6 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
         "standard",
         "standard-jsx",
         "standard-react",
@@ -31,6 +35,7 @@ module.exports = {
         "react/prop-types": "off",
         "no-unused-vars": "off",
         semi: ["error", "never"],
+        ...hooksRules,
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -59,7 +64,6 @@ module.exports = {
       plugins: ["prettier", "react", "react-hooks"],
       extends: [
         "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
         "standard",
         "standard-jsx",
         "standard-react",
@@ -76,6 +80,7 @@ module.exports = {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         semi: ["error", "never"],
+        ...hooksRules,
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
