@@ -9,7 +9,7 @@ module.exports = {
     sourceType: "module",
     requireConfigFile: false,
     babelOptions: {
-      presets: ["@babel/preset-react"],
+      plugins: ["@babel/plugin-syntax-jsx"],
     },
   },
   plugins: ["prettier"],
