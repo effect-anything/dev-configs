@@ -1,0 +1,11 @@
+{
+  "name": "effect-x",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

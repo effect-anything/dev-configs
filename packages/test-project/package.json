@@ -1,0 +1,19 @@
+{
+  "name": "@effect-x/test-project",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Kee",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@effect-x/eslint-config": "^0.0.1",
+    "@effect-x/prettier-config": "^0.0.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
