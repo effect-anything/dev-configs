@@ -8,4 +8,12 @@ const a: Test = {
   name: "10",
 }
 
+const a_a = 10
+
+class A {
+  constructor() {
+    console.log(1)
+  }
+}
+
 console.log(a, Hello)

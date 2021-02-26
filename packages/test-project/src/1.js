@@ -6,4 +6,4 @@ const ob = {
   name: 10,
 }
 
-console.log(ob, Hello, Hello2)
+console.log(Hello, Hello2)

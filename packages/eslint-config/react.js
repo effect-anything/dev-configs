@@ -22,6 +22,7 @@ module.exports = {
       parser: "@typescript-eslint/parser",
       plugins: ["@typescript-eslint", "prettier", "react", "react-hooks"],
       extends: [
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "standard",
@@ -40,6 +41,8 @@ module.exports = {
       rules: {
         "no-unused-vars": "off",
         "no-useless-constructor": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "all" }],
+        camelcase: "off",
         ...reactRules,
         ...hooksRules,
       },

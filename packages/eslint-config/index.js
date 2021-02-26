@@ -19,6 +19,7 @@ module.exports = {
       parser: "@typescript-eslint/parser",
       plugins: ["@typescript-eslint", "prettier"],
       extends: [
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "standard",
         "prettier",
@@ -33,6 +34,8 @@ module.exports = {
       rules: {
         "no-unused-vars": "off",
         "no-useless-constructor": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "all" }],
+        camelcase: "off",
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -64,8 +67,9 @@ module.exports = {
   },
   rules: {
     "prettier/prettier": ["error", prettierConfig],
-    "no-unused-vars": ["warn", { vars: "all", args: "all" }],
     semi: ["error", "never"],
+    "no-unused-vars": ["warn", { vars: "all", args: "all" }],
+    "no-useless-constructor": "off",
     camelcase: "off",
   },
   globals: {
