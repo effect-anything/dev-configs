@@ -32,12 +32,12 @@ module.exports = {
       ],
       rules: {
         "no-unused-vars": "off",
-        semi: ["error", "never"],
+        "no-useless-constructor": "off",
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
         "import/parsers": {
-          "@typescript-eslint/parser": [".ts"],
+          "@typescript-eslint/parser": [".ts", ".tsx"],
         },
         "import/resolver": {
           typescript: {},
@@ -55,10 +55,10 @@ module.exports = {
     "plugin:import/warnings",
   ],
   settings: {
-    "import/extensions": [".js"],
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/resolver": {
       node: {
-        extensions: [".js"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     },
   },
@@ -66,6 +66,7 @@ module.exports = {
     "prettier/prettier": ["error", prettierConfig],
     "no-unused-vars": ["warn", { vars: "all", args: "all" }],
     semi: ["error", "never"],
+    camelcase: "off",
   },
   globals: {
     global: true,
