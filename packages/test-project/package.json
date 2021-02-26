@@ -1,13 +1,13 @@
 {
   "name": "@effect-x/test-project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "author": "Kee",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "@effect-x/eslint-config": "^0.0.3",
+    "@effect-x/eslint-config": "^0.0.4",
     "@effect-x/prettier-config": "^0.0.1",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
