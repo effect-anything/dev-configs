@@ -1,6 +1,0 @@
-{
-    "extends": [
-      "@effect-x/eslint-config",
-      "@effect-x/eslint-config/react"
-    ]
-}

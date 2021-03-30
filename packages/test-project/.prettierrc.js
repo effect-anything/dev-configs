@@ -1,3 +1,3 @@
-const prettierConfig = require("@effect-x/prettier-config")
+const prettierConfig = require("../prettier-config")
 
 module.exports = prettierConfig

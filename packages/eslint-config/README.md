@@ -1,4 +1,4 @@
-# `@effect-x/eslint-config-test`
+# `@effect-x/eslint-config`
 
 > TODO: description
 

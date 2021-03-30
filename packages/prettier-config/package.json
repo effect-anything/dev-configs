@@ -13,10 +13,10 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "prettier": "^2.2.1"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "prettier": "^2.2.1"
   }
 }

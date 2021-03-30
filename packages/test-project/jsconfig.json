@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "checkJs": true,
+    "checkJs": false,
     "baseUrl": "./src",
     "jsx": "react-jsx",
     "noEmit": true,

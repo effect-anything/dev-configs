@@ -2,6 +2,7 @@ const prettierConfig = require("@effect-x/prettier-config")
 
 module.exports = {
   env: {
+    browser: true,
     es6: true,
   },
   parser: "@babel/eslint-parser",
@@ -9,10 +10,14 @@ module.exports = {
     sourceType: "module",
     requireConfigFile: false,
     babelOptions: {
-      plugins: [require.resolve("@babel/plugin-syntax-jsx")],
+      plugins: [
+        require.resolve("@babel/plugin-syntax-jsx"),
+        require.resolve("@babel/plugin-proposal-class-properties"),
+      ],
     },
   },
   plugins: ["prettier"],
+  extends: ["standard", "prettier", "plugin:import/recommended", "plugin:import/errors", "plugin:import/warnings"],
   overrides: [
     {
       files: ["**/*.ts"],
@@ -23,9 +28,6 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "standard",
         "prettier",
-        "prettier/prettier",
-        "prettier/@typescript-eslint",
-        "prettier/standard",
         "plugin:import/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
@@ -34,7 +36,7 @@ module.exports = {
       rules: {
         "no-unused-vars": "off",
         "no-useless-constructor": "off",
-        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "all" }],
+        "@typescript-eslint/no-unused-vars": ["error", { vars: "all", args: "all" }],
         camelcase: "off",
       },
       settings: {
@@ -43,19 +45,12 @@ module.exports = {
           "@typescript-eslint/parser": [".ts", ".tsx"],
         },
         "import/resolver": {
-          typescript: {},
+          typescript: {
+            alwaysTryTypes: true,
+          },
         },
       },
     },
-  ],
-  extends: [
-    "standard",
-    "prettier",
-    "prettier/prettier",
-    "prettier/standard",
-    "plugin:import/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
   ],
   settings: {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -68,8 +63,8 @@ module.exports = {
   rules: {
     "prettier/prettier": ["error", prettierConfig],
     semi: ["error", "never"],
-    "no-unused-vars": ["warn", { vars: "all", args: "all" }],
     "no-useless-constructor": "off",
+    "no-unused-vars": ["error", { vars: "all", args: "all" }],
     camelcase: "off",
   },
   globals: {
