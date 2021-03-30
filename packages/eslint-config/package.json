@@ -1,6 +1,6 @@
 {
   "name": "@effect-x/eslint-config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "Kee",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "@babel/eslint-parser": "^7.13.14",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-syntax-jsx": "^7.12.13",
-    "@effect-x/prettier-config": "^0.0.1",
+    "@effect-x/prettier-config": "^0.0.2",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "eslint": "^7.23.0",
