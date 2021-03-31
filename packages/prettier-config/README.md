@@ -1,11 +1,11 @@
 # `@effect-x/prettier-config`
 
-> TODO: description
-
 ## Usage
 
-```
+config `.prettierrc.js`
+
+```javascript
 const prettierConfig = require('@effect-x/prettier-config');
 
-// TODO: DEMONSTRATE API
+module.exports = prettierConfig
 ```

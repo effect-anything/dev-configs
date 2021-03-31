@@ -1,11 +1,11 @@
 # `@effect-x/eslint-config`
 
-> TODO: description
-
 ## Usage
 
-```
-const eslintConfig = require('@effect-x/eslint-config');
+config `.eslintrc`
 
-// TODO: DEMONSTRATE API
+```
+{
+  "extends": ["@effect-x/eslint-config", "@effect-x/eslint-config/react"]
+}
 ```
