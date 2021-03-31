@@ -2,6 +2,8 @@
 
 ## Usage
 
+`yarn add prettier -D`
+
 config `.prettierrc.js`
 
 ```javascript

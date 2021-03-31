@@ -2,6 +2,8 @@
 
 ## Usage
 
+`yarn add typescript eslint prettier -D`
+
 config `.eslintrc`
 
 ```
