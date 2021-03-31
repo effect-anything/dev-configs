@@ -36,9 +36,9 @@ module.exports = {
         "plugin:import/typescript",
       ],
       rules: {
-        "no-unused-vars": "off",
         "no-useless-constructor": "off",
-        "@typescript-eslint/no-unused-vars": ["error", { vars: "all", args: "all" }],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "all" }],
         camelcase: "off",
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/ban-types": "off",
@@ -78,9 +78,10 @@ module.exports = {
         "plugin:import/warnings",
       ],
       rules: {
+        semi: ["error", "never"],
         "no-useless-constructor": "off",
+        "no-unused-vars": ["warn", { vars: "all", args: "all" }],
         camelcase: "off",
-        "no-unused-vars": ["error", { vars: "all", args: "all" }],
         ...reactRules,
         ...hooksRules,
       },
