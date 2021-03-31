@@ -1,7 +1,12 @@
 {
   "name": "@effect-x/eslint-config",
   "version": "0.0.8",
-  "description": "> TODO: description",
+  "description": "eslint config",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/effect-anything/dev-configs"
+  },
+  "homepage": "https://github.com/effect-anything/dev-configs",
   "author": "Kee",
   "main": "index.js",
   "files": [
