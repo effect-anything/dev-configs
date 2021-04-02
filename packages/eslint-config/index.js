@@ -12,6 +12,12 @@ module.exports = {
     babelOptions: {
       plugins: [
         require.resolve("@babel/plugin-syntax-jsx"),
+        [
+          require.resolve("@babel/plugin-proposal-decorators"),
+          {
+            legacy: true,
+          },
+        ],
         require.resolve("@babel/plugin-proposal-class-properties"),
       ],
     },
