@@ -58,6 +58,9 @@ module.exports = {
           "@typescript-eslint/parser": [".ts", ".tsx"],
         },
         "import/resolver": {
+          node: {
+            extensions: [".js", ".jsx", ".ts", ".tsx"],
+          },
           typescript: {
             alwaysTryTypes: true,
           },
@@ -87,9 +90,15 @@ module.exports = {
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"],
+        },
         "import/resolver": {
           node: {
             extensions: [".js", ".jsx", ".ts", ".tsx"],
+          },
+          typescript: {
+            alwaysTryTypes: true,
           },
         },
       },
