@@ -4,7 +4,7 @@ interface Test {
   name: string
 }
 
-const a: Test = {
+export const a: Test = {
   name: "10",
 }
 

@@ -1,4 +1,6 @@
 import { Component, useEffect, useState } from "react"
+import { a } from "./3"
+import { x } from "./4"
 
 const a_a = 10
 
