@@ -1,6 +1,6 @@
 {
   "name": "@effect-x/eslint-config",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "eslint config",
   "repository": {
     "type": "github",
