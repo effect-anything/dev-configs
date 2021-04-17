@@ -25,7 +25,6 @@ module.exports = {
   plugins: ["prettier"],
   extends: [
     "eslint:recommended",
-    "standard",
     "prettier",
     "plugin:import/recommended",
     "plugin:import/errors",
@@ -39,7 +38,6 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "standard",
         "prettier",
         "plugin:import/recommended",
         "plugin:import/errors",
@@ -54,7 +52,6 @@ module.exports = {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/ban-types": "off",
         "@typescript-eslint/camelcase": "off",
-        "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-empty-interface": "off",
