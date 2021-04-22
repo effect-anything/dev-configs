@@ -53,12 +53,14 @@ module.exports = {
         "plugin:import/typescript",
       ],
       rules: {
+        "no-use-before-define": "off",
         "no-useless-constructor": "off",
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "all" }],
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars-experimental": "error",
         camelcase: "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/ban-ts-ignore": "off",
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -67,6 +69,7 @@ module.exports = {
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
       },
       settings: {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -93,16 +96,13 @@ module.exports = {
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
-      typescript: {
-        alwaysTryTypes: true,
-      },
     },
   },
   rules: {
     "prettier/prettier": ["error", prettierConfig],
     semi: ["error", "never"],
     "no-useless-constructor": "off",
-    "no-unused-vars": ["warn", { vars: "all", args: "all" }],
+    "no-unused-vars": ["warn", { vars: "all", args: "all", argsIgnorePattern: "^_" }],
     "import/namespace": ["error", { allowComputed: true }],
     camelcase: "off",
   },
