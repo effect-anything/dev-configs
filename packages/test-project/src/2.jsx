@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react"
+import React, { Component, useEffect, useState } from "react"
 import { a } from "./3"
 import { x } from "./4"
 
