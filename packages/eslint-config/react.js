@@ -39,7 +39,7 @@ module.exports = {
         "no-useless-constructor": "off",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars-experimental": "warn",
+        "@typescript-eslint/no-unused-vars-experimental": ["warn", { ignoredNamesRegex: "^_" }],
         camelcase: "off",
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/ban-ts-ignore": "off",
@@ -85,7 +85,7 @@ module.exports = {
       rules: {
         semi: ["error", "never"],
         "no-useless-constructor": "off",
-        "no-unused-vars": ["warn", { vars: "all", args: "all", argsIgnorePattern: "^_" }],
+        "no-unused-vars": ["warn", { vars: "all", args: "all", argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
         "import/namespace": ["error", { allowComputed: true }],
         camelcase: "off",
         ...reactRules,
